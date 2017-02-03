@@ -38,7 +38,8 @@ h6:not(:first-child) {
 }
 
 #ContentWrapper {
-    max-width: 1140px;
+    max-width: 1180px;
+    padding: 0 10px;
     margin: 0 auto;
     background: #ffffff;
     min-height: 100%;
