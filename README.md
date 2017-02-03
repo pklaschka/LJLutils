@@ -7,7 +7,7 @@ It will be continually extended as there are more things developed by the author
 
 ## Topics already adressed by this library:
 - Console Printing
-- Physics (WIP)
+- Physics and Vector Calculations (WIP)
 
 Now, I wish you success working with this library.
 ```Java
