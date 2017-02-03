@@ -59,6 +59,10 @@ h6:not(:first-child) {
     overflow: hidden;
 }
 
+.Row + .Row {
+    margin-top: 1em;
+}
+
 .Row:after {
     display: block;
     clear: both;
