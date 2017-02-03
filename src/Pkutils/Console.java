@@ -26,7 +26,7 @@ public class Console {
      */
     public static void printlnIndented(Object object) {
         System.out.print("\n");
-        for (int i = 0; i <= indentionLevel; i++) {
+        for (int i = 0; i < indentionLevel; i++) {
             System.out.print("\t");
         }
         System.out.print(object);
@@ -37,6 +37,26 @@ public class Console {
     }
 
     public static void setIndentionLevel(int indentionLevel) {
-        Console.indentionLevel = indentionLevel;
+        Console.indentionLevel = Math.max(0, indentionLevel);
+    }
+
+    /**
+     * Increases the indention level by 1
+     *
+     * @return The new indention level
+     */
+    public static int increaseIndentionLevel() {
+        setIndentionLevel(getIndentionLevel() + 1);
+        return getIndentionLevel();
+    }
+
+    /**
+     * Decreases the indention level by 1
+     *
+     * @return The new indention level
+     */
+    public static int decreaseIndentionLevel() {
+        setIndentionLevel(getIndentionLevel() - 1);
+        return getIndentionLevel();
     }
 }
