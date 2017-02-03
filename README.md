@@ -6,3 +6,10 @@ PKutils is a Java Class Library that is supposed to help developers developing f
 It will be continually extended as there are more things developed by the author, which he thinks are worthy of putting into this library.
 
 Now, I wish you success working with this library.
+```Java
+public class Quote {
+    public void EinsteinOnceSaid() {
+        System.out.println("Everything Should Be Made as Simple as Possible, But Not Simpler");
+    }
+}
+```
