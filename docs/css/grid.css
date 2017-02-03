@@ -24,8 +24,16 @@ html,
 }
 
 body {
-    background: #D7E0FF;
     min-height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #45527F;
 }
 
 h1:not(:first-child),
