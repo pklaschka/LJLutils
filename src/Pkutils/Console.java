@@ -4,9 +4,9 @@ import java.util.ArrayList;
 
 public class Console {
     private static int indentionLevel = 0;
-    private static boolean isPrintingToConsole;
-    private static String consoleText;
-    private static ArrayList<ConsoleObserver> observers;
+    private static boolean printingToConsole = true;
+    private static String consoleText = "";
+    private static ArrayList<ConsoleObserver> observers = new ArrayList<ConsoleObserver>();
 
     /**
      * Prints out Object in the console.
@@ -15,7 +15,7 @@ public class Console {
      */
     public static void print(Object object) {
         consoleText += object.toString();
-        if (isPrintingToConsole) {
+        if (printingToConsole) {
             System.out.print(object);
         }
         for (ConsoleObserver observer : observers) {
@@ -80,5 +80,25 @@ public class Console {
     public static int decreaseIndentionLevel() {
         setIndentionLevel(getIndentionLevel() - 1);
         return getIndentionLevel();
+    }
+
+    public void addObserver(ConsoleObserver observer) {
+        observers.add(observer);
+    }
+
+    public void removeObserver(ConsoleObserver observer) {
+        observers.remove(observer);
+    }
+
+    public static boolean isprintingToConsole() {
+        return printingToConsole;
+    }
+
+    public static void setprintingToConsole(boolean isPrintingToConsole) {
+        Console.printingToConsole = isPrintingToConsole;
+    }
+
+    public static String getConsoleText() {
+        return consoleText;
     }
 }
