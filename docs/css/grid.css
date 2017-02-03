@@ -23,6 +23,11 @@ h6:not(:first-child) {
     margin-top: 1em;
 }
 
+#ContentWrapper {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
 .Row {
     display: block;
     clear: both;
