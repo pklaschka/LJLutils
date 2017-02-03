@@ -1,4 +1,4 @@
-package pkutils.physics;
+package llutils.physics;
 
 public class Vector {
     private double x;
