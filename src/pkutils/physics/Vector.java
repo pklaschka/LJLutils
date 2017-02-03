@@ -1,7 +1,5 @@
 package pkutils.physics;
 
-import com.sun.javafx.geom.Vec3d;
-
 public class Vector {
     private double x;
     private double y;
@@ -17,6 +15,57 @@ public class Vector {
         this.z = z;
     }
 
+
+    //region Static math
+    public static Vector getMultipliedVector(Vector vector, double factor) {
+        vector = (Vector) vector.clone();
+        vector.multiply(factor);
+        return vector;
+    }
+
+    public static Vector getMultipliedVector(Vector vector, Vector factor) {
+        vector = (Vector) vector.clone();
+        vector.multiply(factor);
+        return vector;
+    }
+
+    public static Vector getAddedVector(Vector vector, Vector secondVector) {
+        vector = (Vector) vector.clone();
+        vector.add(secondVector);
+        return vector;
+    }
+
+    public static Vector getSubtractedVector(Vector vector, Vector secondVector) {
+        vector = (Vector) vector.clone();
+        vector.subtract(secondVector);
+        return vector;
+    }
+
+    public static Vector getCrossProductVector(Vector vector, Vector secondVector) {
+        vector = (Vector) vector.clone();
+        vector.cross(secondVector);
+        return vector;
+    }
+
+    public static double getDotProduct(Vector vector, Vector secondVector) {
+        vector = (Vector) vector.clone();
+        return vector.dot(secondVector);
+    }
+
+    public static Vector getDividedVector(Vector vector, double factor) {
+        vector = (Vector) vector.clone();
+        vector.divide(factor);
+        return vector;
+    }
+
+    public static Vector getDividedVector(Vector vector, Vector divider) {
+        vector = (Vector) vector.clone();
+        vector.divide(divider);
+        return vector;
+    }
+    //endregion
+
+    //region Concrete math
     public double getMagnitude() {
         double xyComponent = Math.sqrt(x * x + y * y);
         return Math.sqrt(xyComponent * xyComponent + z * z);
@@ -55,6 +104,10 @@ public class Vector {
         this.z /= divider.z;
     }
 
+    public void divide(double divider) {
+        this.divide(new Vector(divider, divider, divider));
+    }
+
     public double dot(Vector secondVector) {
         return this.x * secondVector.x + this.y * secondVector.y + this.z * secondVector.z;
     }
@@ -65,7 +118,10 @@ public class Vector {
         z = this.x * secondVector.y - this.y * secondVector.x;
         return new Vector(x, y, z);
     }
+    //endregion
 
+
+    //region Getters and setters
     public double getX() {
         return x;
     }
@@ -89,6 +145,7 @@ public class Vector {
     public void setZ(double z) {
         this.z = z;
     }
+    //endregion
 
     @Override
     public String toString() {
@@ -97,5 +154,10 @@ public class Vector {
                 ", y=" + y +
                 ", z=" + z +
                 '}';
+    }
+
+    @Override
+    protected Object clone() {
+        return new Vector(x, y, z);
     }
 }
