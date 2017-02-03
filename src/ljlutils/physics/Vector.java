@@ -1,4 +1,4 @@
-package llutils.physics;
+package ljlutils.physics;
 
 public class Vector {
     private double x;

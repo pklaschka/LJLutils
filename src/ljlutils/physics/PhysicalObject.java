@@ -1,4 +1,4 @@
-package llutils.physics;
+package ljlutils.physics;
 
 import java.util.ArrayList;
 
@@ -13,6 +13,7 @@ public class PhysicalObject {
     }
 
     {
+        // Add the object to the static object list
         addObject(this);
     }
 
