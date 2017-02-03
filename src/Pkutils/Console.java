@@ -26,7 +26,7 @@ public class Console {
      */
     public static void printlnIndented(Object object) {
         System.out.print("\n");
-        for (int i = 0; i < indentionLevel; i++) {
+        for (int i = 0; i < getIndentionLevel(); i++) {
             System.out.print("\t");
         }
         System.out.print(object);
