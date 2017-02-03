@@ -1,4 +1,4 @@
-package Pkutils;
+package pkutils;
 
 import java.util.ArrayList;
 
