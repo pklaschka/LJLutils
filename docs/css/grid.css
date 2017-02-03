@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 
+/*
+Color scheme:
+#8BA4FF Primary Blue (Lighter)
+#45527F Dark Blue
+#D7E0FF Light grey
+#6C707F Dark Grey
+ */
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -12,6 +20,12 @@ html,
 :root {
     font-size: 15px;
     font-family: 'Nuito', 'Myriad Pro', sans-serif;
+    min-height: 100%;
+}
+
+body {
+    background: #D7E0FF;
+    min-height: 100%;
 }
 
 h1:not(:first-child),
@@ -26,6 +40,8 @@ h6:not(:first-child) {
 #ContentWrapper {
     max-width: 1140px;
     margin: 0 auto;
+    background: #ffffff;
+    min-height: 100%;
 }
 
 .Row {
