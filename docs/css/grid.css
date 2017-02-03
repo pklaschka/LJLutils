@@ -90,7 +90,8 @@ h6:not(:first-child) {
     width: 66.66666666666%;
 }
 
-.BlueBox {
+.Content.BlueBox {
+    padding: 10px;
     background: #45527F;
     color: white;
 }
