@@ -1,7 +1,12 @@
 package Pkutils;
 
+import java.util.ArrayList;
+
 public class Console {
     private static int indentionLevel = 0;
+    private static boolean isPrintingToConsole;
+    private static String consoleText;
+    private static ArrayList<ConsoleObserver> observers;
 
     /**
      * Prints out Object in the console.
@@ -9,7 +14,13 @@ public class Console {
      * @param object The Object that's to be printed
      */
     public static void print(Object object) {
-        System.out.print(object);
+        consoleText += object.toString();
+        if (isPrintingToConsole) {
+            System.out.print(object);
+        }
+        for (ConsoleObserver observer : observers) {
+            observer.notifyConsoleChange(consoleText);
+        }
     }
 
     /**
@@ -18,18 +29,29 @@ public class Console {
      * @param object The Object that's to be printed
      */
     public static void println(Object object) {
-        System.out.println(object);
+        print("\n" + object);
     }
 
     /**
+     * Prints the Object on a new line with the saved indention level.
      * @param object The Object that's to be printed
      */
     public static void printlnIndented(Object object) {
-        System.out.print("\n");
-        for (int i = 0; i < getIndentionLevel(); i++) {
-            System.out.print("\t");
+        printlnIndented(object, getIndentionLevel());
+    }
+
+    /**
+     * Prints the Object on a new line with the indention level set in the parameters.
+     *
+     * @param object         The Object that's to be printed
+     * @param indentionLevel The indention level (corresponding to the count of '\t' before the content
+     */
+    public static void printlnIndented(Object object, int indentionLevel) {
+        print("\n");
+        for (int i = 0; i < indentionLevel; i++) {
+            print("\t");
         }
-        System.out.print(object);
+        print(object);
     }
 
     public static int getIndentionLevel() {
