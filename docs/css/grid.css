@@ -42,4 +42,21 @@ h6:not(:first-child) {
 .Content {
     display: inline-block;
     padding: 0 10px;
+    min-height: 100%;
+}
+
+.Column-100 {
+    width: 100%;
+}
+
+.Column-50 {
+    width: 50%;
+}
+
+.Column-33 {
+    width: 33.33333333333%;
+}
+
+.Column-66 {
+    width: 66.66666666666%;
 }
