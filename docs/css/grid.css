@@ -1,3 +1,4 @@
+/*noinspection CssUnknownTarget*/
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 
 /*
@@ -47,8 +48,7 @@ ul {
 }
 
 ul li {
-    list-style-type: disc;
-    list-style-position: inside;
+    list-style: disc inside;
 }
 
 p + h1,
@@ -111,9 +111,9 @@ header #Logo {
 }
 
 .Shadow {
-    -webkit-box-shadow: 0px 6px 45px -5px rgba(0, 0, 0, 0.19);
-    -moz-box-shadow: 0px 6px 45px -5px rgba(0, 0, 0, 0.19);
-    box-shadow: 0px 6px 45px -5px rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 0 6px 45px -5px rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 6px 45px -5px rgba(0, 0, 0, 0.19);
+    box-shadow: 0 6px 45px -5px rgba(0, 0, 0, 0.19);
 }
 
 header #Logo a {
@@ -171,9 +171,8 @@ header #Logo a {
 .Content {
     display: block;
     float: left;
-    padding: 0 10px;
     min-height: 10000px;
-    padding-bottom: 9999px;
+    padding: 0 10px 9999px;
     margin-bottom: -9999px;
     position: relative;
 }
