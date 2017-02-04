@@ -204,7 +204,7 @@ header #Logo a {
 }
 
 .Content.BlueBox {
-    padding: 10px 0;
+    padding: 10px;
     background: #45527F;
 }
 
@@ -216,6 +216,10 @@ header #Logo a {
 @media screen and (max-width: 640px) {
     .Content {
         width: 100% !important;
+    }
+
+    .DesktopOnly {
+        display: none;
     }
 
     .Content + .Content {
