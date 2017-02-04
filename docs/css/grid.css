@@ -217,4 +217,8 @@ header #Logo a {
     .Content {
         width: 100% !important;
     }
+
+    .Content + .Content {
+        margin-top: 20px;
+    }
 }
