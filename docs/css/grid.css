@@ -219,6 +219,6 @@ header #Logo a {
     }
 
     .Content + .Content {
-        margin-top: 20px;
+        margin-top: 1em;
     }
 }
