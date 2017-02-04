@@ -107,10 +107,13 @@ header #Logo {
     top: 0;
     left: 20px;
     width: 100px;
+    z-index: 9999;
+}
+
+.Shadow {
     -webkit-box-shadow: 0px 6px 45px -5px rgba(0, 0, 0, 0.19);
     -moz-box-shadow: 0px 6px 45px -5px rgba(0, 0, 0, 0.19);
     box-shadow: 0px 6px 45px -5px rgba(0, 0, 0, 0.19);
-    z-index: 9999;
 }
 
 header #Logo a {
@@ -191,9 +194,12 @@ header #Logo a {
     width: 66.66666666666%;
 }
 
-.Content.BlueBox,
-.Content.BlueBox * {
+.Content.BlueBox {
     padding-top: 10px;
     background: #45527F;
+}
+
+.Content.BlueBox,
+.Content.BlueBox * {
     color: white;
 }
