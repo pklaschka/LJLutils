@@ -222,7 +222,18 @@ header #Logo a {
         display: none;
     }
 
-    .Content + .Content {
+    main .Content + .Content {
         margin-top: 1em;
+    }
+
+    footer .VaCenter {
+        display: inline-block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+        transform: none;
     }
 }
