@@ -98,6 +98,17 @@ header a,
 footer a {
     color: white;
     display: inline-block;
+    text-decoration: none;
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    -ms-transition: color 0.3s;
+    -o-transition: color 0.3s;
+    transition: color 0.3s;
+}
+
+header a:hover,
+footer a:hover {
+    color: #D7E0FF;
 }
 
 header #Logo {
