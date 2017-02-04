@@ -41,6 +41,8 @@ h6 {
 
 a {
     color: #45527F;
+    line-break: loose;
+    display: inline;
 }
 
 .BigFont {
@@ -180,7 +182,7 @@ header #Logo a {
 }
 
 .Content {
-    display: flex; /* block */
+    display: block; /* block */
     flex-direction: column;
     padding: 0 10px;
     position: relative;
