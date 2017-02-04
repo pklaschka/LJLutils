@@ -1,6 +1,6 @@
 # LJLutils
 
-![Stable: Not version released yet](https://img.shields.io/badge/stable%20version-not%20released%20yet-red.svg)
+[![Stable: v0.0.1 Pre-release](https://img.shields.io/badge/stable%20version-v0.0.1%20pre--release-yellow.svg)](https://github.com/pklaschka/LJLutils/releases/tag/v0.0.1)
 
 **Please: if someone has a better idea for the name of this library (the current one stands for LittleJavaLibraryUtilities), I'm open for any suggestions.**
 
