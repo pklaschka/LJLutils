@@ -18,7 +18,8 @@ Color scheme:
 
 html,
 :root {
-    font-size: 15px;
+    font-size: 16px;
+    line-height: 1.5em;
     font-family: 'Nuito', 'Myriad Pro', sans-serif;
     min-height: 100%;
 }
@@ -34,35 +35,124 @@ h4,
 h5,
 h6 {
     color: #45527F;
+    line-height: normal;
 }
 
-/*h1:not(:first-child),
-h2:not(:first-child),
-h3:not(:first-child),
-h4:not(:first-child),
-h5:not(:first-child),
-h6:not(:first-child) {
+.BigFont {
+    font-size: 1.25em;
+}
+
+ul {
+    /* padding-left: 1.5em;*/
+}
+
+ul li {
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+p + h1,
+p + h2,
+p + h3,
+p + h4,
+p + h5,
+p + h6 {
+    margin-top: 10px;
+}
+
+h1 + *:not(h1,h2,h3,h4,h5,h6),
+h2 + *:not(h1,h2,h3,h4,h5,h6),
+h3 + *:not(h1,h2,h3,h4,h5,h6),
+h4 + *:not(h1,h2,h3,h4,h5,h6),
+h5 + *:not(h1,h2,h3,h4,h5,h6),
+h6 + *:not(h1,h2,h3,h4,h5,h6) {
     margin-top: 1em;
-}*/
+}
+
+p,
+ul,
+ol {
+    margin-top: 0.5em;
+}
+
+main {
+    min-height: calc(100vh - 50px - 80px - 50px - 1em);
+}
+
+header,
+footer {
+    min-height: 50px;
+    background: #45527F;
+    color: white;
+}
 
 header {
-    min-height: 50px;
-    margin-bottom: 1em;
-    background: #45527F;
+    margin-bottom: 80px;
 }
 
-#ContentWrapper {
+footer {
+    margin-top: 1em;
+}
+
+header a,
+footer a {
+    color: white;
+    display: inline-block;
+}
+
+header #Logo {
+    background: white;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: 100px;
+    -webkit-box-shadow: 0px 6px 45px -5px rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0px 6px 45px -5px rgba(0, 0, 0, 0.19);
+    box-shadow: 0px 6px 45px -5px rgba(0, 0, 0, 0.19);
+    z-index: 9999;
+}
+
+header #Logo a {
+    display: block;
+}
+
+.TaRight {
+    text-align: right;
+}
+
+.TaLeft {
+    text-align: left;
+}
+
+.TaCenter {
+    text-align: center;
+}
+
+.VaCenter {
+    display: inline-block;
+    margin-top: 25px;
+    -webkit-transform: translatey(-50%);
+    -moz-transform: translatey(-50%);
+    -ms-transform: translatey(-50%);
+    -o-transform: translatey(-50%);
+    transform: translatey(-50%);
+}
+
+.ContentWrapper {
     max-width: 1180px;
     padding: 0 10px;
     margin: 0 auto;
-    background: #ffffff;
+    /*background: #ffffff;*/
     min-height: 100%;
+    position: relative;
 }
 
 .Row {
     display: block;
     clear: both;
     overflow: hidden;
+    position: relative;
 }
 
 .Row + .Row {
@@ -79,9 +169,10 @@ header {
     display: block;
     float: left;
     padding: 0 10px;
-    min-height: 100%;
+    min-height: 10000px;
     padding-bottom: 9999px;
     margin-bottom: -9999px;
+    position: relative;
 }
 
 .Column-100 {
@@ -100,7 +191,8 @@ header {
     width: 66.66666666666%;
 }
 
-.Content.BlueBox {
+.Content.BlueBox,
+.Content.BlueBox * {
     padding-top: 10px;
     background: #45527F;
     color: white;
