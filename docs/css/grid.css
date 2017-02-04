@@ -204,7 +204,7 @@ header #Logo a {
 }
 
 .Content.BlueBox {
-    padding-top: 10px;
+    padding: 10px 0;
     background: #45527F;
 }
 
