@@ -1,6 +1,8 @@
 package ljlutils;
 
 import javax.swing.*;
+import java.sql.Date;
+import java.time.Instant;
 import java.util.ArrayList;
 
 public class ErrorManager {
@@ -34,8 +36,8 @@ public class ErrorManager {
     private static String userPostText = "For support, please ask the developer of this software.";
 
     static {
-        errors.add(-199, new Error(-199, "The reserved error code -199 or -198 was used while calling ljlutils.ErrorManager.registerError(...).", "This is a non-critical error."));
-        errors.add(-198, new Error(-198, "The errorCode specified when calling ljlutils.ErrorManager.triggerError(int errorCode) wasn't found.", "This is a non-critical error."));
+        errors.add(-199, new Error(-199, "(ErrorManager Internal) The reserved error code -199 or -198 was used while calling ljlutils.ErrorManager.registerError(...).", "This is a non-critical error."));
+        errors.add(-198, new Error(-198, "(ErrorManager Internal) The errorCode specified when calling ljlutils.ErrorManager.triggerError(int errorCode) wasn't found.", "This is a non-critical error."));
     }
 
     /**
@@ -78,5 +80,25 @@ public class ErrorManager {
                 JOptionPane.showMessageDialog(new JFrame(), userPreText + "\n" + currentError.errorCode + ": " + currentError.userMsg + "\n" + userPostText, "Error", JOptionPane.ERROR_MESSAGE);
             }
         }
+    }
+
+    /**
+     * Creates a list of all registered errors.
+     * @return Multiline list of all registered errors.
+     */
+    public static String getRegisteredErrorsList() {
+        StringBuilder s = new StringBuilder();
+        s.append("Errors (generated: ");
+        s.append(Date.from(Instant.now()).toLocaleString());
+        s.append("):");
+
+        for (Error e : errors) {
+            s.append("\n- ");
+            s.append(e.errorCode);
+            s.append(": ");
+            s.append(e.devMsg);
+        }
+
+        return s.toString();
     }
 }
