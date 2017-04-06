@@ -1,18 +1,25 @@
 # LJLutils
 
-[![Stable: v0.0.1 Pre-release](https://img.shields.io/badge/stable%20version-v0.0.1%20pre--release-yellow.svg)](https://github.com/pklaschka/LJLutils/releases/tag/v0.0.1)
+[![Stable: v0.0.1 Pre-release](https://img.shields.io/badge/stable%20version-v1.0.0%20release-green.svg)](https://github.com/pklaschka/LJLutils/releases/tag/v1.0.0)
 
-**Please: if someone has a better idea for the name of this library (the current one stands for LittleJavaLibraryUtilities), I'm open for any suggestions.**
-
-## What it is:
+## What it is
 LJLutils is a Java Class Library that is supposed to help developers developing faster by having methods like visualizing tree-structures in the console by automatically indenting them and so on.
 It will be continually extended as there are more things developed by the author, which he thinks are worthy of putting into this library.
 
-## Topics already adressed by this library:
+## Topics already adressed by this library
 - Console Printing
 - Physics and Vector Calculations (WIP)
+- Error Messages and Management
 
-Now, I wish you success working with this library.
+## New Features
+### ErrorManager
+**Dealing with errors was never easier…**
+
+The ``ErrorManager`` allows for easy handling of costom errors and their displaying to the user. One of the biggest features is the automatic handling of errorcodes and -messages as well as displaying different informations to the developer and the end user. This makes dealing with many error messages much simpler, as ``getRegisteredErrorsList()`` easily gives you an easy list with all your error codes explained for the current version.
+
+## And Last but not least:
+
+I wish you success and fun working with this library.
 ```Java
 public class Quote {
     public void EinsteinOnceSaid() {
