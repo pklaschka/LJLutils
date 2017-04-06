@@ -215,6 +215,27 @@ header #Logo a {
     color: white;
 }
 
+.Padding {
+    padding: 1em;
+}
+
+.Badge {
+    display: inline-block;
+    color: white;
+    background: #45527F;
+    padding:  0.2em 0.5em;
+    line-height: normal;
+    margin: 0.5em 0;
+    -webkit-border-radius:1em 0.2em;
+    -moz-border-radius:0.2em;
+    border-radius:0.2em;
+}
+
+b, strong {
+    font-weight: bold;
+    font-style: italic;
+}
+
 @media screen and (max-width: 640px) {
     .Content {
         width: 100% !important;

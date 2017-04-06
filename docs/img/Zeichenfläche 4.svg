@@ -1,0 +1,13 @@
+<svg id="Ebene_1" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:#6c707f;stroke-miterlimit:10;}.cls-2{fill:#45527f;}.cls-3,.cls-9{font-family:Nunito,
+            Nunito;}.cls-4{letter-spacing:-0.01em;}.cls-5{letter-spacing:1.34em;}.cls-6{letter-spacing:-0.01em;}.cls-7{letter-spacing:-0.01em;}.cls-8{letter-spacing:-0.01em;}.cls-9{fill:#6c707f;}.cls-10{letter-spacing:-0.01em;}
+        </style>
+    </defs>
+    <title>Zeichenfläche 4</title>
+    <rect x="10" y="10" width="620" height="460" class="cls-1"></rect>
+    <rect x="10" y="10" width="620" height="40" class="cls-2"></rect>
+
+    <text class="cls-3" text-anchor="middle" x="320" y="240" font-size="46px">Error-Handling</text>
+</svg>
