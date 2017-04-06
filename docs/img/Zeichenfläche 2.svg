@@ -1,0 +1,21 @@
+<svg id="Ebene_1" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480">
+    <defs>
+        <style>.cls-1{fill:#5a668d;}.cls-2{font-size:46px;font-family:Nunito,
+            Nunito;}.cls-3{letter-spacing:-0.01em;}.cls-4{letter-spacing:-0.15em;}
+        </style>
+    </defs>
+    <title>Zeichenfläche 2</title>
+    <polygon class="cls-1"
+             points="180 367.07 429.89 367.07 427.09 360.47 450.25 370.24 427.09 380.02 429.89 373.42 180 373.42 180 367.07"/>
+    <polygon class="cls-1"
+             points="176.82 370.25 176.82 120.36 170.23 123.16 180 100 189.77 123.16 183.18 120.36 183.18 370.25 176.82 370.25"/>
+    <polygon class="cls-1"
+             points="177.75 368 298.49 247.27 291.84 244.59 315.12 235.12 305.66 258.41 302.97 251.76 182.25 372.49 177.75 368"/>
+    <text class="cls-2" transform="translate(261.15 132.29)">P(5
+        <tspan class="cls-3" x="71.83" y="0">,</tspan>
+        <tspan x="85.13" y="0"></tspan>
+        <tspan class="cls-4" x="98.94" y="0">7</tspan>
+        <tspan class="cls-3" x="119.81" y="0">,</tspan>
+        <tspan x="133.1" y="0" xml:space="preserve"> 9)</tspan>
+    </text>
+</svg>
