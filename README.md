@@ -1,6 +1,6 @@
 # LJLutils
 
-[![Stable: v0.0.1 Pre-release](https://img.shields.io/badge/stable%20version-v1.0.0%20release-green.svg)](https://github.com/pklaschka/LJLutils/releases/tag/v1.0.0)
+[![Stable: v1.0.2 Release](https://img.shields.io/badge/stable%20version-v1.0.2%20release-green.svg)](https://github.com/pklaschka/LJLutils/releases/tag/v1.0.2)
 
 ## What it is
 LJLutils is a Java Class Library that is supposed to help developers developing faster by having methods like visualizing tree-structures in the console by automatically indenting them and so on.
