@@ -101,4 +101,28 @@ public class ErrorManager {
 
         return s.toString();
     }
+
+    public static boolean isDevMode() {
+        return devMode;
+    }
+
+    public static void setDevMode(boolean devMode) {
+        ErrorManager.devMode = devMode;
+    }
+
+    public static String getUserPreText() {
+        return userPreText;
+    }
+
+    public static void setUserPreText(String userPreText) {
+        ErrorManager.userPreText = userPreText;
+    }
+
+    public static String getUserPostText() {
+        return userPostText;
+    }
+
+    public static void setUserPostText(String userPostText) {
+        ErrorManager.userPostText = userPostText;
+    }
 }
