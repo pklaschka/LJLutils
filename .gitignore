@@ -1,10 +1,2 @@
-
-\.idea/LJLutils\.iml
-
-\.idea/vcs\.xml
-
-\.idea/misc\.xml
-
-\.idea/
-
-LJLutils\.iml
+# ItelliJ Idea Folder
+\.idea/**
